@@ -4,10 +4,38 @@
 		<meta charset="utf-8" />
 		<link rel="icon" href="/favicon.png" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		%sveltekit.head%
+		<link href="/_app/immutable/entry/start.Maphix6i.js" rel="modulepreload">
+		<link href="/_app/immutable/chunks/BxJam0ne.js" rel="modulepreload">
+		<link href="/_app/immutable/chunks/DcwWKgvm.js" rel="modulepreload">
+		<link href="/_app/immutable/chunks/9mRwdDuz.js" rel="modulepreload">
+		<link href="/_app/immutable/entry/app.lG2L5kBU.js" rel="modulepreload">
+		<link href="/_app/immutable/chunks/lAKFgsLs.js" rel="modulepreload">
+		<link href="/_app/immutable/chunks/DeMg6936.js" rel="modulepreload">
+		<link href="/_app/immutable/chunks/CQhYMCWZ.js" rel="modulepreload">
+		<link href="/_app/immutable/chunks/cPRav7-_.js" rel="modulepreload">
+		<link href="/_app/immutable/nodes/0.CcNCOng-.js" rel="modulepreload">
+		
+		<link href="/_app/immutable/assets/0.Cc7CMMTg.css" rel="stylesheet">
 		%sveltekit.preloads
 	</head>
 	<body data-sveltekit="true">
-		<div style="display: contents">%sveltekit.body%</div>
+		<div style="display: contents">
+			<script>
+				{
+					__sveltekit_1cxmihp = {
+						base: ""
+					};
+
+					const element = document.currentScript.parentElement;
+
+					Promise.all([
+						import("/_app/immutable/entry/start.Maphix6i.js"),
+						import("/_app/immutable/entry/app.lG2L5kBU.js")
+					]).then(([kit, app]) => {
+						kit.start(app, element);
+					});
+				}
+			</script>
+		</div>
 	</body>
 </html>
