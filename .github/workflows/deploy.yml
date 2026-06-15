@@ -21,14 +21,13 @@ jobs:
       - uses: actions/checkout@v4
         with:
           ref: main
-          clean: true
       - uses: actions/setup-node@v4
         with:
           node-version: '20'
           cache: 'npm'
-      - run: npm ci
+      - run: npm ci --legacy-peer-deps
       - run: npm run build
-      - run: cp -r .svelte-kit/output/client/* build/ && cp build/index.html build/404.html
+      - run: ls -la build/ && cp -r .svelte-kit/output/client/* build/ && cp src/app.html build/index.html && cp build/index.html build/404.html
       - uses: actions/upload-pages-artifact@v3
         with:
           path: ./build

@@ -1,7 +1,7 @@
 node_modules
-# build
+build
 .svelte-kit
-_dist
+dist
 *.log
 .env
 .env.*
