@@ -1,7 +1,7 @@
 <script lang="ts">
-	import { goto } from '$app/navigation'
+import { goto } from '$app/navigation'
 	
-	let code = ''
+let code = $state('')
 	
 	function activate(code: string) {
 		if (code === 'P2P-PREMIUM-2026') {

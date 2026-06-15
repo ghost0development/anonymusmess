@@ -10,7 +10,7 @@
 	let message = $state('')
 	let messages = $state([] as any[])
 	let panelOpen = $state(false)
-	let qrCanvas: HTMLCanvasElement | null = null
+	let qrCanvas = $state(null as HTMLCanvasElement | null)
 	let myPeerId = $state('')
 	let currentToken = $state(localStorage.getItem('p2p_token') || '')
 	let user = $state(null as any)
