@@ -1,17 +1,12 @@
 <script>
-	import { onMount } from 'svelte';
 	import { formatPeerId, generatePeerId } from '$lib/utils';
 	
 	let messages = $state([]);
 	let message = $state('');
 	let peerId = $state('');
-	let otherPeerId = $state('');
 	
-	onMount(() => {
-		peerId = localStorage.getItem('peerId') || generatePeerId();
-		localStorage.setItem('peerId', peerId);
-		messages.push({ id: 1, from: 'System', text: 'Welcome to P2P Chat Enterprise', time: new Date() });
-	});
+	peerId = localStorage.getItem('peerId') || generatePeerId();
+	messages.push({ id: 1, from: 'System', text: 'Welcome to P2P Chat Enterprise', time: new Date() });
 	
 	function sendMessage() {
 		if (!message.trim()) return;

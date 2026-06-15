@@ -15,7 +15,7 @@
 	<button class="primary" onclick={upgradeToPremium}>
 		Upgrade Now
 	</button>
-	<a href="/" class="premium-link">Back to Home</a>
+	<button class="premium-link" onclick={() => window.location.href = '/'}>Back to Home</button>
 </div>
 
 <style>
